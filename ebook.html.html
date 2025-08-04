@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Despertar da Manipulação - E-book Transformador</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .book-3d {
+            transform: perspective(1000px) rotateY(-15deg) rotateX(2deg);
+            box-shadow: 20px 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .testimonial-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-20 w-32 h-32 bg-white rounded-full floating"></div>
+            <div class="absolute bottom-20 right-20 w-24 h-24 bg-white rounded-full floating" style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/2 left-10 w-16 h-16 bg-white rounded-full floating" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 py-16 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-white fade-in">
+                    <div class="mb-6">
+                        <span class="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide">
+                            🔥 Lançamento Especial
+                        </span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+                        O DESPERTAR DA
+                        <span class="text-yellow-400">MANIPULAÇÃO</span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
+                        Descubra os segredos por trás das técnicas de manipulação e aprenda a se proteger das influências negativas que controlam sua vida
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="https://pay.hotmart.com/F100950515U?off=r3yzl3je&hotfeature=51&_hi=eyJjaWQiOiIxNzUzMTM5Mzk4MzEyOTY2MjQ3NzQxNzA4MjgxNzAwIiwiYmlkIjoiMTc1MzEzOTM5ODMxMjk2NjI0Nzc0MTcwODI4MTcwMCIsInNpZCI6IjU0Nzg0YjEzMDBlZjQyNGJiNzYxMGQ4OGRjM2I0YmE0In0=..&bid=." 
+                           class="bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-all duration-300 pulse-animation text-center">
+                            🚀 QUERO MEU E-BOOK AGORA
+                        </a>
+                        <button onclick="scrollToSection('benefits')" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-purple-600 transition-all duration-300 text-center">
+                            📖 SABER MAIS
+                        </button>
+                    </div>
+                    
+                    <div class="flex items-center gap-6 text-sm">
+                        <div class="flex items-center gap-2">
+                            <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
+                            <span>4.9/5 (2.847 avaliações)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-green-400">✅</span>
+                            <span>Garantia de 7 dias</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Book Cover -->
+                <div class="flex justify-center lg:justify-end fade-in">
+                    <div class="relative">
+                        <div class="book-3d w-80 h-96 bg-gradient-to-br from-red-600 to-purple-800 rounded-lg flex items-center justify-center text-white floating">
+                            <div class="text-center p-8">
+                                <div class="text-6xl mb-4">🧠</div>
+                                <h3 class="text-2xl font-bold mb-2">O DESPERTAR DA</h3>
+                                <h3 class="text-2xl font-bold mb-4">MANIPULAÇÃO</h3>
+                                <div class="w-16 h-1 bg-yellow-400 mx-auto mb-4"></div>
+                                <p class="text-sm opacity-80">Liberte-se das amarras mentais</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Price Badge -->
+                        <div class="absolute -top-4 -right-4 bg-red-500 text-white px-4 py-2 rounded-full font-bold text-lg pulse-animation">
+                            Apenas R$ 27,00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">
+                    O QUE VOCÊ VAI <span class="text-purple-600">DESCOBRIR</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Um guia completo para identificar, compreender e se libertar das técnicas de manipulação que afetam sua vida diariamente
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-purple-50 to-indigo-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                    <div class="text-4xl mb-4">🎭</div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Técnicas de Manipulação</h3>
+                    <p class="text-gray-600">Aprenda a identificar as principais técnicas usadas por manipuladores em relacionamentos, trabalho e mídia.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                    <div class="text-4xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Estratégias de Defesa</h3>
+                    <p class="text-gray-600">Desenvolva mecanismos de proteção mental e emocional contra influências negativas.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                    <div class="text-4xl mb-4">🧠</div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Psicologia da Influência</h3>
+                    <p class="text-gray-600">Compreenda como funciona a mente humana e os gatilhos psicológicos da persuasão.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                    <div class="text-4xl mb-4">💪</div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Fortalecimento Mental</h3>
+                    <p class="text-gray-600">Construa uma mentalidade forte e resistente a manipulações externas.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-pink-50 to-rose-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Tomada de Decisões</h3>
+                    <p class="text-gray-600">Aprenda a tomar decisões conscientes e livres de influências manipuladoras.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                    <div class="text-4xl mb-4">🌟</div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Liberdade Pessoal</h3>
+                    <p class="text-gray-600">Conquiste sua independência mental e viva de acordo com seus próprios valores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 gradient-bg relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+                    O QUE DIZEM NOSSOS <span class="text-yellow-400">LEITORES</span>
+                </h2>
+                <p class="text-xl text-white opacity-90">
+                    Milhares de pessoas já transformaram suas vidas com este conhecimento
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card p-6 rounded-xl border border-white border-opacity-20">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-black font-bold">M</div>
+                        <div class="ml-4">
+                            <h4 class="text-white font-bold">Maria Silva</h4>
+                            <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-white opacity-90">"Finalmente consegui identificar os padrões tóxicos no meu relacionamento. Este e-book mudou minha vida!"</p>
+                </div>
+                
+                <div class="testimonial-card p-6 rounded-xl border border-white border-opacity-20">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-black font-bold">J</div>
+                        <div class="ml-4">
+                            <h4 class="text-white font-bold">João Santos</h4>
+                            <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-white opacity-90">"Incrível como eu estava sendo manipulado no trabalho sem perceber. Agora tenho controle total!"</p>
+                </div>
+                
+                <div class="testimonial-card p-6 rounded-xl border border-white border-opacity-20">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-black font-bold">A</div>
+                        <div class="ml-4">
+                            <h4 class="text-white font-bold">Ana Costa</h4>
+                            <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-white opacity-90">"Conteúdo denso e transformador. Recomendo para qualquer pessoa que quer ter mais consciência."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="py-20 bg-red-600 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                ⚠️ OFERTA POR TEMPO LIMITADO
+            </h2>
+            <p class="text-2xl mb-8">
+                De <span class="line-through opacity-60">R$ 97,00</span> por apenas <span class="text-yellow-400 font-bold">R$ 27,00</span>
+            </p>
+            
+            <div class="bg-black bg-opacity-30 rounded-xl p-8 max-w-md mx-auto mb-8">
+                <div class="text-sm mb-2">Esta oferta expira em:</div>
+                <div id="countdown" class="text-3xl font-bold text-yellow-400"></div>
+            </div>
+            
+            <a href="https://pay.hotmart.com/F100950515U?off=r3yzl3je&hotfeature=51&_hi=eyJjaWQiOiIxNzUzMTM5Mzk4MzEyOTY2MjQ3NzQxNzA4MjgxNzAwIiwiYmlkIjoiMTc1MzEzOTM5ODMxMjk2NjI0Nzc0MTcwODI4MTcwMCIsInNpZCI6IjU0Nzg0YjEzMDBlZjQyNGJiNzYxMGQ4OGRjM2I0YmE0In0=..&bid=." 
+               class="inline-block bg-yellow-400 text-black px-12 py-6 rounded-lg font-bold text-2xl hover:bg-yellow-300 transition-all duration-300 pulse-animation">
+                🔥 GARANTIR MINHA CÓPIA AGORA
+            </a>
+            
+            <div class="mt-8 flex justify-center items-center gap-8 text-sm">
+                <div class="flex items-center gap-2">
+                    <span class="text-green-400">✅</span>
+                    <span>Acesso Imediato</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-green-400">✅</span>
+                    <span>Garantia de 7 dias</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-green-400">✅</span>
+                    <span>Suporte 24h</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="py-20 bg-green-50">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-6xl mb-6">🛡️</div>
+                <h2 class="text-4xl font-black text-gray-800 mb-6">
+                    GARANTIA INCONDICIONAL DE 7 DIAS
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Se por qualquer motivo você não ficar 100% satisfeito com o conteúdo, 
+                    devolvemos seu dinheiro sem perguntas. Sem burocracia, sem complicação.
+                </p>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Você está protegido!</h3>
+                    <p class="text-gray-600">
+                        Sua compra é 100% segura. Processamento via Hotmart, 
+                        a maior plataforma de produtos digitais do Brasil.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 gradient-bg text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                NÃO DEIXE PARA AMANHÃ O QUE PODE <span class="text-yellow-400">TRANSFORMAR SUA VIDA HOJE</span>
+            </h2>
+            <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+                Cada dia que você permanece vulnerável às manipulações é um dia a menos de liberdade e consciência. 
+                Tome o controle da sua vida agora!
+            </p>
+            
+            <a href="https://pay.hotmart.com/F100950515U?off=r3yzl3je&hotfeature=51&_hi=eyJjaWQiOiIxNzUzMTM5Mzk4MzEyOTY2MjQ3NzQxNzA4MjgxNzAwIiwiYmlkIjoiMTc1MzEzOTM5ODMxMjk2NjI0Nzc0MTcwODI4MTcwMCIsInNpZCI6IjU0Nzg0YjEzMDBlZjQyNGJiNzYxMGQ4OGRjM2I0YmE0In0=..&bid=." 
+               class="inline-block bg-yellow-400 text-black px-12 py-6 rounded-lg font-bold text-2xl hover:bg-yellow-300 transition-all duration-300 pulse-animation mb-8">
+                🚀 SIM, QUERO ME LIBERTAR AGORA!
+            </a>
+            
+            <div class="text-sm opacity-80">
+                ⚡ Download imediato após a compra | 🔒 Compra 100% segura | 💳 Parcelamento disponível
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold mb-4">O Despertar da Manipulação</h3>
+                <p class="text-gray-400">Liberte-se das amarras mentais e viva com consciência plena</p>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-gray-400 text-sm">
+                    © 2024 O Despertar da Manipulação. Todos os direitos reservados. | 
+                    <a href="#" class="hover:text-white">Política de Privacidade</a> | 
+                    <a href="#" class="hover:text-white">Termos de Uso</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function startCountdown() {
+            const countdownElement = document.getElementById('countdown');
+            const endTime = new Date().getTime() + (24 * 60 * 60 * 1000); // 24 hours from now
+            
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const timeLeft = endTime - now;
+                
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                
+                countdownElement.innerHTML = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                if (timeLeft < 0) {
+                    countdownElement.innerHTML = "00:00:00";
+                }
+            }
+            
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+        
+        // Smooth scroll function
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        
+        // Initialize countdown when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            startCountdown();
+        });
+        
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections for animations
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96a1a32cf3faad09',t:'MTc1NDM0ODA3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
